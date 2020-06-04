@@ -3,19 +3,19 @@ const router = express.Router();
 const eventsController = require('../controllers/events');
 
 
-// Create a new Tutorial
+// Create a new Event
 router.post("/", eventsController.create);
 
-// Retrieve all Tutorials
+// Retrieve all Event
 router.get("/", eventsController.findAll);
 
-// Retrieve a single Tutorial with id
+// Retrieve a single Event with id
 router.get("/:id", eventsController.findOne);
 
-// Update a Tutorial with id
+// Update a Event with id
 router.put("/:id", eventsController.updateOne);
 
-// Delete a Tutorial with id
+// Delete a Event with id
 router.delete("/:id", eventsController.deleteOne);
 
 module.exports = router;
