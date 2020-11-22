@@ -8,7 +8,7 @@ const app = express();
 const mongoose = require("mongoose");
 
 mongoose
-	.connect('mongodb://node:janelle123@ds251112.mlab.com:51112/calico', {
+	.connect('', {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	})
